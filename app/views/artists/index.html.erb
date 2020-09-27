@@ -1,0 +1,5 @@
+<div class="title">Artists List</div>
+<%= @artists.each do |artist|%>
+<%= link_to artist.name, artist_path(artist) %>
+<%= artist.song_count if artist.songs%> song
+<%end%>
